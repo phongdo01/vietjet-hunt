@@ -3,10 +3,10 @@ var router = express.Router();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var loginRouter = require('./routes/login');
+var authRouter = require('./routes/auth');
 
 router.use('/', indexRouter);
 router.use('/users', usersRouter);
-router.use('/login', loginRouter);
+router.use('/auth', authRouter);
 
 module.exports = router;
